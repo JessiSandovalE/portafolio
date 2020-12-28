@@ -187,7 +187,80 @@ export const HomeStyle = style({
                 transform:'translateY(-10px)'
             }
           }
-        }
+        },
+        '& .skills':{
+          width:'100%',
+          display:'grid',
+          gridTemplateColumns:'10% 35% 50%',
+          gridGap:'10px',
+          alignItems:'center',
+          backgroundColor:Color.gray,
+          padding:'50px 0',
+          $nest:{
+            '& .titleSkills':{
+              transform:'rotate(-90deg)',
+              width:'100%',
+              display:'inline-block',
+              //borderBottom:'1px solid',
+              //borderColor:Color.lightGray,
+              textAlign:'center',
+              color:Color.lightGray,
+              fontSize:Font.normal
+            },
+            '& .titleSkills:before':{
+              content: '',
+              width: '70%',
+              position: 'absolute',
+              top: '50%',
+              right: 'calc(100% + 1em)',
+              height: '1px',
+              backgroundColor: 'red',
+              boxSizing:'border-box',
+              fontSize:Font.normal
+            },
+            '& .list':{
+              width:'100%',
+              $nest:{
+                '& li':{
+                    margin:'20px 0',
+                    listStyle:'none',
+                    textTransform:'uppercase',
+                    $nest:{
+                      '& .bar':{
+                        backgroundColor:Color.lightGray,
+                        display:'block',
+                        height: '2px',
+                        border: '1px solid rgba(0, 0, 0, 0 ,0.3)',
+                        borderRadius:'3px',
+                        overflow:'hidden',
+                        boxShadow:'0 0 10px #f4b236b3'
+                      },
+                      '& .bar span':{
+                        height:'2px',
+                        float: 'left',
+                        backgroundColor:'#f4b236'
+                      },
+                      '& .html':{
+                        width:'90%'
+                      },
+                      '& .css':{
+                        width:'80%'
+                      },
+                      '& .javascript':{
+                        width:'70%'
+                      },
+                      '& .angular':{
+                        width:'50%'
+                      },
+                      '& .react':{
+                        width:'60%'
+                      }
+                    }
+                }
+              }
+            }
+          }
+        },
       }
     },
     '& p':{

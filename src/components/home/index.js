@@ -33,7 +33,7 @@ const Home = ()=> {
         </div>
       </div>
       <div className={`${container} work`}>
-        <div className="title">Lo que hago</div>
+        <div className="title">Servicios que puedo ofrecerte</div>
         <div className="cards">
           <div className="card">
             <div className="icon">
@@ -63,7 +63,43 @@ const Home = ()=> {
             </div>
           </div>
         </div>
+        <div className="skills">
+          <div className={`titleSkills`}>Mis Skills</div>
+          <div className="list">
+          <li>
+            <h5>HTML</h5>
+            <span className="bar">
+              <span className="html"></span>
+            </span>
+          </li>
+          <li>
+            <h5>CSS3</h5>
+            <span className="bar">
+              <span className="css"></span>
+            </span>
+          </li>
+          <li>
+            <h5>JAVASCRIPT</h5>
+            <span className="bar">
+              <span className="javascript"></span>
+            </span>
+          </li>
+          <li>
+            <h5>Angular</h5>
+            <span className="bar">
+              <span className="angular"></span>
+            </span>
+          </li>
+          <li>
+            <h5>React</h5>
+            <span className="bar">
+              <span className="react"></span>
+            </span>
+          </li>
+          </div>
       </div>
+      </div>
+      
     </div>
   )
 
